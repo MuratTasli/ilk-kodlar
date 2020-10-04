@@ -1,27 +1,27 @@
 #include <stdio.h>
-#include<locale.h>//türkçe karakter sıkıntısı olmaması için
+#include<locale.h>//tÃ¼rkÃ§e karakter sÄ±kÄ±ntÄ±sÄ± olmamasÄ± iÃ§in
 
 int main(){
-	setlocale(LC_ALL, "Turkish");//türkçe karakter sıkıntısı olmaması için
+	setlocale(LC_ALL, "Turkish");//tÃ¼rkÃ§e karakter sÄ±kÄ±ntÄ±sÄ± olmamasÄ± iÃ§in
 	
 	int kere,sayac=1,en_kucuk, sayi;
 
-printf("kaç sayı gireceksiniz?\n");//kullanıcıdan döngü sayısı alınıyor
+printf("kaÃ§ sayÄ± gireceksiniz?\n");//kullanÄ±cÄ±dan dÃ¶ngÃ¼ sayÄ±sÄ± alÄ±nÄ±yor
 scanf("%d",&kere);
 
 
 while(kere>=1){
 	
-	if(sayac==1){//ilk girilen sayı en küçük değere atanacak
-		printf("%d. sayıyı gir:", sayac);
+	if(sayac==1){//ilk girilen sayÄ± en kÃ¼Ã§Ã¼k deÄŸere atanacak
+		printf("%d. sayÄ±yÄ± gir:", sayac);
 		scanf("%d",&en_kucuk);
 	}
-	else{//sonradan girilen sayılar sayi değişkenine atanacak
-		printf("%d. sayıyı gir:", sayac);
+	else{//sonradan girilen sayÄ±lar sayi deÄŸiÅŸkenine atanacak
+		printf("%d. sayÄ±yÄ± gir:", sayac);
 		scanf("%d",&sayi);	
 	}		
 		
-	if(sayi<en_kucuk)//sonradan girilen sayıların içinde en_kucuk değerden küçük olanı varsa değişim yapılacak
+	if(sayi<en_kucuk)//sonradan girilen sayÄ±larÄ±n iÃ§inde en_kucuk deÄŸerden kÃ¼Ã§Ã¼k olanÄ± varsa deÄŸiÅŸim yapÄ±lacak
 		en_kucuk=sayi;
 	
 	kere--;
@@ -29,7 +29,7 @@ while(kere>=1){
 }
 
 
-printf("girdiğiniz sayıların en kücüğü: %d", en_kucuk);
+printf("girdiÄŸiniz sayÄ±larÄ±n en kÃ¼cÃ¼ÄŸÃ¼: %d", en_kucuk);
 	
-	
+return 0;	
 }
